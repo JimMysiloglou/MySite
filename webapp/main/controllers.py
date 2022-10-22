@@ -1,4 +1,4 @@
-from flask import Blueprint, redirect, render_template, flash, url_for
+from flask import Blueprint, redirect, render_template, session
 from flask_babel import _
 
 main_blueprint = Blueprint(
@@ -17,16 +17,17 @@ def my_journey():
 
 @main_blueprint.route('/blog/')
 def blog():
-    return redirect("https://jimmysiloglou.github.io/blog/")
+    lang = session['locale']
+    return redirect(f"https://jimmysiloglou.github.io/{lang}/blog.html")
 
 @main_blueprint.route('/portfolio/')
 def prortfolio():
-    return redirect("https://jimmysiloglou.github.io/blog/")
+    lang = session['locale']
+    return redirect(f"https://jimmysiloglou.github.io/{lang}/portfolio.html")
 
 
 @main_blueprint.route("/contact/")
 def contact():
-    
     return render_template("contact.html")
 
 @main_blueprint.route("/contact_success/")
