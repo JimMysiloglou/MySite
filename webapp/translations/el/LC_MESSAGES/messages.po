@@ -1,0 +1,270 @@
+# Greek translations for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-10-22 10:51+0300\n"
+"PO-Revision-Date: 2022-10-22 10:52+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: el\n"
+"Language-Team: el <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: webapp/templates/contact.html:4 webapp/templates/contact_success.html:4
+msgid "Contact me"
+msgstr "Επικοινωνία"
+
+#: webapp/templates/contact.html:23 webapp/templates/contact_success.html:15
+msgid "Contact Me!"
+msgstr "Επικοινωνήστε μαζί μου!"
+
+#: webapp/templates/contact.html:26
+msgid "First Name*"
+msgstr "Όνομα*"
+
+#: webapp/templates/contact.html:30
+msgid "Last Name*"
+msgstr "Επώνυμο*"
+
+#: webapp/templates/contact.html:38
+msgid "Phone Number"
+msgstr "Τηλέφωνο"
+
+#: webapp/templates/contact.html:42
+msgid "Message*"
+msgstr "Μήνυμα*"
+
+#: webapp/templates/contact.html:45
+msgid "Submit"
+msgstr "Υποβολή"
+
+#: webapp/templates/contact_success.html:16
+msgid "Success! Thank you for your message."
+msgstr "Το μήνυμα στάλθηκε επιτυχώς, ευχαριστώ!"
+
+#: webapp/templates/index.html:4 webapp/templates/index.html:36
+msgid "About me"
+msgstr "Σχετικά"
+
+#: webapp/templates/index.html:14 webapp/templates/my_journey.html:14
+msgid "Mysiloglou Dimitrios"
+msgstr "Μυσιλόγλου Δημήτριος"
+
+#: webapp/templates/index.html:15
+msgid "Data analyst | Data Scientist"
+msgstr "Αναλυτής δεδομένων | Επιστήμονας δεδομένων"
+
+#: webapp/templates/index.html:20
+msgid "Download CV"
+msgstr "Λήψη CV"
+
+#: webapp/templates/index.html:24
+msgid "Contact Me"
+msgstr "Επικοινωνία"
+
+#: webapp/templates/index.html:42
+msgid ""
+"Welcome to my site! I made this blog to record my passion for problem "
+"solving through data analysis. I hold a Bachelor's degree in Economics "
+"and I am experienced in Python, SQL and Tableau. My other interests are "
+"web development and creating Linux projects with Raspberry Pi. Thank you "
+"for visiting!"
+msgstr ""
+"Καλώς ήρθατε στην ιστοσελίδα μου! Δημιούργησα αυτό το ιστολόγιο για να "
+"καταγράψω το πάθος μου για την επίλυση προβλημάτων μέσω της ανάλυσης "
+"δεδομένων. Οι σπουδές μου είναι στα οικονομικά και έχω εμπειρία στην "
+"χρήση Python, SQL και Tableau. Στον ελεύθερο χρόνο μου ασχολούμαι με την "
+"ανάπτυξη ιστοσελίδων και τη δημιουργία μικρών project με το Raspberry pi."
+" Ευχαριστώ για την επίσκεψη!"
+
+#: webapp/templates/index.html:55
+msgid "Cellphone"
+msgstr "Κινητό τηλ."
+
+#: webapp/templates/index.html:59
+msgid "Address"
+msgstr "Διεύθυνση"
+
+#: webapp/templates/index.html:60
+msgid "Piraues - Greece"
+msgstr "Πειραιάς - Ελλάδα"
+
+#: webapp/templates/index.html:68
+msgid "Proficient (4+ years)"
+msgstr "Άριστη γνώση (4+ χρόνια)"
+
+#: webapp/templates/index.html:81
+msgid "Advanced (3 years)"
+msgstr "Προχωρημένη (3 χρόνια)"
+
+#: webapp/templates/index.html:100
+msgid "Good (2 years)"
+msgstr "Καλή γνώση (2 χρόνια)"
+
+#: webapp/templates/index.html:131
+msgid "Learning (1 year)"
+msgstr "Μαθαίνω (1 χρόνος)"
+
+#: webapp/templates/my_journey.html:15
+msgid "My journey so far..."
+msgstr "Το ταξίδι μου μέχρι τώρα..."
+
+#: webapp/templates/my_journey.html:27
+msgid "Education and Work Experience"
+msgstr "Εκπαίδευση και επαγγελματική εμπειρία"
+
+#: webapp/templates/my_journey.html:37
+msgid "Business Economics and Finance"
+msgstr "Οικονομικά των επιχειρήσεων και χρηματοοικονομικά"
+
+#: webapp/templates/my_journey.html:38
+msgid "April 2014"
+msgstr "Απρίλιος 2014"
+
+#: webapp/templates/my_journey.html:40
+msgid "Bachelor degree in the department of economics science"
+msgstr "Πτυχίο στο τμήμα οικονομικής επιστήμης"
+
+#: webapp/templates/my_journey.html:41 webapp/templates/my_journey.html:95
+#: webapp/templates/my_journey.html:304
+msgid "by"
+msgstr "του"
+
+#: webapp/templates/my_journey.html:41
+msgid "Athens University of Economics and Business."
+msgstr "Οικονομικού πανεπιστημίου Αθηνών."
+
+#: webapp/templates/my_journey.html:50
+msgid "Full time agent(banking sector)"
+msgstr "Υπάλληλος πλήρης απασχόλησης(τραπεζικός τομέας)"
+
+#: webapp/templates/my_journey.html:51
+msgid "April 2016"
+msgstr "Απρίλιος 2016"
+
+#: webapp/templates/my_journey.html:54
+msgid ""
+"Contacting customers over overdue payments and advise them on alternative"
+" payment plans."
+msgstr ""
+"Διαχείριση ληξιπρόθεσμων οφειλών και διαπραγμάτευση για την αποπληρωμή "
+"τους."
+
+#: webapp/templates/my_journey.html:64
+msgid "June 2017"
+msgstr "Ιούνιος 2017"
+
+#: webapp/templates/my_journey.html:67 webapp/templates/my_journey.html:90
+#: webapp/templates/my_journey.html:110 webapp/templates/my_journey.html:132
+#: webapp/templates/my_journey.html:152 webapp/templates/my_journey.html:171
+#: webapp/templates/my_journey.html:192 webapp/templates/my_journey.html:215
+#: webapp/templates/my_journey.html:236 webapp/templates/my_journey.html:259
+#: webapp/templates/my_journey.html:298
+msgid "Modules"
+msgstr "Ενότητες"
+
+#: webapp/templates/my_journey.html:78 webapp/templates/my_journey.html:98
+#: webapp/templates/my_journey.html:140 webapp/templates/my_journey.html:180
+#: webapp/templates/my_journey.html:203 webapp/templates/my_journey.html:224
+#: webapp/templates/my_journey.html:247 webapp/templates/my_journey.html:270
+#: webapp/templates/my_journey.html:286 webapp/templates/my_journey.html:307
+#: webapp/templates/my_journey.html:323
+msgid "Certificate"
+msgstr "Πιστοποίηση"
+
+#: webapp/templates/my_journey.html:86
+msgid "Python Programming"
+msgstr "Προγραμματισμός στην Python"
+
+#: webapp/templates/my_journey.html:87
+msgid "June 2019"
+msgstr "Ιούνιος 2019"
+
+#: webapp/templates/my_journey.html:92
+msgid "Introduction to Python"
+msgstr "Εισαγωγή στην Python"
+
+#: webapp/templates/my_journey.html:93
+msgid "Advanced programming in Python"
+msgstr "Προχωρημένος προγραμματισμός στην Python"
+
+#: webapp/templates/my_journey.html:95 webapp/templates/my_journey.html:304
+msgid ""
+"Crete University Press of the Foundation for Reasearch and Technology - "
+"Hellas on Mathesis MOOC."
+msgstr ""
+"Κέντρου Ανοικτών Διαδικτυακών Μαθημάτων Mathesis,των Πανεπιστημιακών "
+"Εκδόσεων Κρήτης."
+
+#: webapp/templates/my_journey.html:107
+msgid "January 2020"
+msgstr "Ιανουάριος 2020"
+
+#: webapp/templates/my_journey.html:129
+msgid "March 2020"
+msgstr "Μάρτιος 2020"
+
+#: webapp/templates/my_journey.html:149
+msgid "May 2020"
+msgstr "Μάιος 2020"
+
+#: webapp/templates/my_journey.html:168
+msgid "October 2020"
+msgstr "Οκτώβριος 2020"
+
+#: webapp/templates/my_journey.html:189
+msgid "November 2020"
+msgstr "Νοέμβριος 2020"
+
+#: webapp/templates/my_journey.html:212
+msgid "December 2020"
+msgstr "Δεκέμβριος 2020"
+
+#: webapp/templates/my_journey.html:233 webapp/templates/my_journey.html:256
+msgid "January 2021"
+msgstr "Ιανουάριος 2021"
+
+#: webapp/templates/my_journey.html:279
+msgid "October 2021"
+msgstr "Οκτώβριος 2021"
+
+#: webapp/templates/my_journey.html:295
+msgid "January 2022"
+msgstr "Ιανουάριος 2022"
+
+#: webapp/templates/my_journey.html:316
+msgid "May 2022"
+msgstr "Μάιος 2022"
+
+#: webapp/templates/navbar.html:45
+msgid "Language"
+msgstr "Γλώσσα"
+
+#: webapp/templates/navbar.html:52
+msgid "Greek"
+msgstr "Ελληνικά"
+
+#: webapp/templates/errors/403.html:11
+msgid "This action is not allowed!"
+msgstr "Αυτή η ενέργεια δεν επιτρέπεται!"
+
+#: webapp/templates/errors/404.html:11
+msgid "This page did not found!"
+msgstr "Η σελίδα δεν βρέθηκε!"
+
+#: webapp/templates/errors/415.html:11
+msgid "Media type not supported!"
+msgstr "Αυτό το είδος αρχείου δεν υποστηρίζεται!"
+
+#: webapp/templates/errors/500.html:11
+msgid "The server is not working. Please come back later!"
+msgstr "Ο σέρβερ δεν λειτουργεί. Παρακαλώ επιστρέψτε αργότερα!"
+

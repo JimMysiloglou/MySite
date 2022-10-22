@@ -1,0 +1,334 @@
+{% extends "base.html" %}
+
+{% block title %}
+    My Journey
+{% endblock title %}
+
+{% block jumbotron %}
+<div id="intro"
+class="text-center bg-image shadow-3-strong"
+style="background-image: url('/static/images/journey_jumbotron.jpg');">
+<div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+  <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+          <h1 class="mb-3">{{ _('Mysiloglou Dimitrios') }}</h1>
+              <h5 class="mb-4">{{ _('My journey so far...') }}</h5>
+      </div>
+  </div>
+</div>
+</div>
+<!-- Background image -->
+{% endblock jumbotron %}
+
+{% block content %}
+<main>
+    <div class="container">
+        <div class="text-center">
+        <h3 class="mt-5"><strong>{{ _('Education and Work Experience') }}</strong></h3>
+        </div>
+        <div class="wrapper">
+            <div class="center-line">
+              <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+            </div>
+            <div class="row row-1">
+              <section>
+                <i class="icon fas fa-graduation-cap"></i>
+                <div class="details">
+                  <span class="title">{{ _('Business Economics and Finance' )}}</span>
+                  <span>{{ _('April 2014') }}</span>
+                </div>
+                <p>{{ _('Bachelor degree in the department of economics science') }}<br>
+                    {{_('by') }} <em>{{ _('Athens University of Economics and Business.') }}</em></p>
+                <div class="bottom">
+                </div>
+              </section>
+            </div>
+            <div class="row row-2">
+              <section>
+                <i class="icon fas fa-briefcase"></i>
+                <div class="details">
+                  <span class="title">{{ _('Full time agent(banking sector)') }}</span>
+                  <span>{{ _('April 2016') }}</span>
+                </div>
+                <p><em>Mellon Contact Services</em><br>
+                    {{ _('Contacting customers over overdue payments and advise them on alternative payment plans.') }}</p>
+                <div class="bottom">
+                </div>
+              </section>
+            </div>
+            <div class="row row-1">
+              <section>
+                <i class="icon fas fa-award"></i>
+                <div class="details">
+                  <span class="title">ECDL Profile Certificate</span>
+                  <span>{{ _('June 2017') }}</span>
+                </div>
+                <p>
+                    {{ _('Modules') }}
+                    <ul>
+                        <li>Ms Outlook</li>
+                        <li>Ms Word</li>
+                        <li>Ms Excel</li>
+                        <li>Ms Access</li>
+                        <li>Ms PowerPoint</li>
+                    </ul>
+                    by <em>PeopleCert</em>
+                </p>
+                <div class="bottom">
+                  <a href="{{ url_for('static', filename='ECDL PROFILE CERTIFICATE.pdf') }}" target="_blank" class="btn">{{ _('Certificate') }}</a>
+                </div>
+              </section>
+            </div>
+            <div class="row row-2">
+              <section>
+                <i class="icon fas fa-award"></i>
+                <div class="details">
+                  <span class="title">{{ _('Python Programming') }}</span>
+                  <span>{{ _('June 2019') }}</span>
+                </div>
+                <p>
+                    {{ _('Modules') }}
+                    <ol>
+                        <li>{{ _('Introduction to Python') }}</li>
+                        <li>{{ _('Advanced programming in Python') }}</li>
+                    </ol>
+                    {{_('by')}}  <em>{{ _('Crete University Press of the Foundation for Reasearch and Technology - Hellas on Mathesis MOOC.') }}</em>
+                </p>
+                <div class="bottom">
+                  <a href="{% if session['locale'] == 'el' %} https://mathesis.cup.gr/certificates/0f8f64229e32429a9ca3316c518666cc {% else %} https://mathesis.cup.gr/certificates/0f8f64229e32429a9ca3316c518666cc?lang=en {% endif %}" target="_blank" class="btn">{{ _('Certificate') }}</a>
+                </div>
+              </section>
+            </div>
+            <div class="row row-1">
+              <section>
+                <i class="icon fas fa-award"></i>
+                <div class="details">
+                  <span class="title">Microsoft Excel</span>
+                  <span>{{ _('January 2020') }}</span>
+                </div>
+                <p>
+                    {{ _('Modules') }}
+                    <ol>
+                        <li>Advanced Excel Formulas & Functions</li>
+                        <li>Data Analysis with Excel Pivot Tables</li>
+                        <li>Pro Tips: Go from Beginner to Advanced</li>
+                        <li>Data Visualization, Excel Charts & Graphs</li>
+                        <li>Business Intelligence w/ Power Query & DAX</li>
+                    </ol>
+                    by <em>Maven Analytics in partnership with Udemy MOOC.</em>
+                </p>
+                <div class="bottom">
+                </div>
+              </section>
+            </div>
+            <div class="row row-2">
+              <section>
+                <i class="icon fas fa-award"></i>
+                <div class="details">
+                  <span class="title">Applied Data Science</span>
+                  <span>{{ _('March 2020') }}</span>
+                </div>
+                <p>
+                    {{ _('Modules') }}
+                    <ol>
+                        <li>Scientific Computing and Python for Data Science</li>
+                        <li>Machine Learning and Statistical Analysis</li>
+                    </ol>
+                    by <em>WorldQuant University in partnership with the Data Incubator.</em>
+                </p>
+                <div class="bottom">
+                  <a href="https://www.credly.com/badges/034fa361-37e2-4903-8447-376e92717d94" target="_blank" class="btn">{{ _('Certificate') }}</a>
+                </div>
+              </section>
+            </div>
+            <div class="row row-1">
+                <section>
+                  <i class="icon fas fa-award"></i>
+                  <div class="details">
+                    <span class="title">MySQL</span>
+                    <span>{{ _('May 2020') }}</span>
+                  </div>
+                  <p>
+                      {{ _('Modules') }}
+                      <ol>
+                          <li>SQL for Data Analysis: Beginner MySQL Business Intelligence</li>
+                          <li>MySQL Database Administration: Beginner SQL Database Design</li>
+                      </ol>
+                      by <em>Maven Analytics in partnership with Udemy MOOC.</em>
+                  </p>
+                  <div class="bottom">
+                  </div>
+                </section>
+              </div>
+              <div class="row row-2">
+                <section>
+                  <i class="icon fas fa-award"></i>
+                  <div class="details">
+                    <span class="title">Statistics with Python</span>
+                    <span>{{ _('October 2020') }}</span>
+                  </div>
+                  <p>
+                      {{ _('Modules') }}
+                      <ol>
+                          <li>Understanding and Visualizing Data with Python</li>
+                          <li>Inferential Statistical Analysis with Python</li>
+                          <li>Fitting Statistical Models to Data with Python</li>
+                      </ol>
+                      by <em>University of Michigan in partnership with Coursera MOOC.</em>
+                  </p>
+                  <div class="bottom">
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3Z9YQQU6N3A8" target="_blank" class="btn">{{ _('Certificate') }}</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-1">
+                <section>
+                  <i class="icon fas fa-award"></i>
+                  <div class="details">
+                    <span class="title">Excel to MySQL:<br> Analytic Techniques for Business</span>
+                    <span>{{ _('November 2020') }}</span>
+                  </div>
+                  <p>
+                      {{ _('Modules') }}
+                      <ol>
+                          <li>Business Metrics for Data-Driven Companies</li>
+                          <li>Mastering Data Analysis in Excel</li>
+                          <li>Data Visualization and Communication with Tableau</li>
+                          <li>Managing Big Data with MySQL</li>
+                          <li>Increasing Real Estate Management Profits: Harnessing Data Analytics</li>
+                      </ol>
+                      by <em>Duke University in partnership with Coursera MOOC.</em>
+                  </p>
+                  <div class="bottom">
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/M3PFAJRD7LRQ" target="_blank" class="btn">{{ _('Certificate') }}</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-2">
+                <section>
+                  <i class="icon fas fa-award"></i>
+                  <div class="details">
+                    <span class="title">Mathematics for Machine Learning</span>
+                    <span>{{ _('December 2020') }}</span>
+                  </div>
+                  <p>
+                      {{ _('Modules') }}
+                      <ol>
+                          <li>Mathematics for Machine Learning: Linear Algebra</li>
+                          <li>Mathematics for Machine Learning: Multivariate Calculus</li>
+                          <li>Mathematics for Machine Learning: PCA</li>
+                      </ol>
+                      by <em>Imperial College of London in partnership with Coursera MOOC.</em>
+                  </p>
+                  <div class="bottom">
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/XVVJHKMPDZHE" target="_blank" class="btn">{{ _('Certificate') }}</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-1">
+                <section>
+                  <i class="icon fas fa-award"></i>
+                  <div class="details">
+                    <span class="title">Applied Data Science with Python</span>
+                    <span>{{ _('January 2021') }}</span>
+                  </div>
+                  <p>
+                      {{ _('Modules') }}
+                      <ol>
+                          <li>Applied Plotting, Charting & Data Representation in Python</li>
+                          <li>Introduction to Data Science in Python</li>
+                          <li>Applied Machine Learning in Python</li>
+                          <li>Applied Text Mining in Python</li>
+                          <li>Applied Social Network Analysis in Python</li>
+                      </ol>
+                      by <em>University of Michigan in partnership with Coursera MOOC.</em>
+                  </p>
+                  <div class="bottom">
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/9FZEL2XYGHFK" target="_blank" class="btn">{{ _('Certificate') }}</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-2">
+                <section>
+                  <i class="icon fas fa-award"></i>
+                  <div class="details">
+                    <span class="title">Deep Learning</span>
+                    <span>{{ _('January 2021') }}</span>
+                  </div>
+                  <p>
+                      {{ _('Modules') }}
+                      <ol>
+                          <li>Convolutional Neural Networks</li>
+                          <li>Sequence Models</li>
+                          <li>Neural Networks and Deep Learning</li>
+                          <li>Structuring Machine Learning Projects</li>
+                          <li>Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</li>
+                      </ol>
+                      by <em>DeepLearning.AI in partnership with Coursera MOOC.</em>
+                  </p>
+                  <div class="bottom">
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/ETEUAS7TP7GA" target="_blank" class="btn">{{ _('Certificate') }}</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-1">
+                <section>
+                  <i class="icon fas fa-award"></i>
+                  <div class="details">
+                    <span class="title">AWS Machine Learning Foundations</span>
+                    <span>{{ _('October 2021') }}</span>
+                  </div>
+                  <p>
+                      AWS Machine Learning Foundations course in the AWS Machine Learning Scholarship<br>
+                      by  <em>AWS in partnership with Udacity</em>
+                  </p>
+                  <div class="bottom">
+                    <a href="https://confirm.udacity.com/EDKKRQL2" target="_blank" class="btn">{{ _('Certificate') }}</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-2">
+                <section>
+                  <i class="icon fas fa-award"></i>
+                  <div class="details">
+                    <span class="title">Web Development</span>
+                    <span>{{ _('January 2022') }}</span>
+                  </div>
+                  <p>
+                      {{ _('Modules') }}
+                      <ol>
+                          <li>Introduction to web development with HTML5, CSS3, Javascript</li>
+                          <li>Advanced web development</li>
+                          <li>Introduction to web application development with Flask</li>
+                      </ol>
+                      {{_('by')}}  <em>{{ _('Crete University Press of the Foundation for Reasearch and Technology - Hellas on Mathesis MOOC.') }}</em>
+                  </p>
+                  <div class="bottom">
+                    <a href="{% if session['locale'] == 'el' %} https://mathesis.cup.gr/certificates/e7559643453f4cc3ac532231ecd2bcb8 {% else %} https://mathesis.cup.gr/certificates/e7559643453f4cc3ac532231ecd2bcb8?lang=en {% endif %}" target="_blank" class="btn">{{ _('Certificate') }}</a>
+                  </div>
+                </section>
+              </div>
+              <div class="row row-1">
+                <section>
+                  <i class="icon fas fa-award"></i>
+                  <div class="details">
+                    <span class="title">Azure AI Fundamentals</span>
+                    <span>{{ _('May 2022') }}</span>
+                  </div>
+                  <p>
+                      Azure AI Fundamentals Certification<br>
+                      by <em>Microsoft</em>
+                  </p>
+                  <div class="bottom">
+                    <a href="https://www.credly.com/badges/20b344a0-5c71-47c6-b34e-e1f2d809b3eb" target="_blank" class="btn">{{ _('Certificate') }}</a>
+                  </div>
+                </section>
+              </div>
+              
+          
+            </div>
+    </div>
+
+</main>
+
+{% endblock content %}

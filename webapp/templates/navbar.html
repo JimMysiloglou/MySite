@@ -1,0 +1,63 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+    <!-- Container wrapper -->
+    <div class="container">
+  
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="/">Mysiloglou Dimitrios</a>
+  
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+          <!-- Link -->
+          <li class="nav-item">
+            <a class="nav-link {% if request.path == '/blog/' %} active {% endif %}" href="/blog/">Blog</a>
+          </li>
+
+          <!-- Link -->
+          <li class="nav-item">
+            <a class="nav-link {% if request.path == '/portfolio/' %} active {% endif %}" href="/portfolio/">Portfolio</a>
+          </li>
+
+          <!-- Link -->
+          <li class="nav-item">
+            <a class="nav-link {% if request.path == '/my_journey/' %} active {% endif %}" href="/my_journey/">My Journey</a>
+          </li>
+
+          <!-- Link -->
+          <li class="nav-item">
+            <a class="nav-link {% if request.path == '/contact/' %} active {% endif %}" href="/contact/">Contact</a>
+          </li>
+        
+        </ul>
+        
+        
+      <!-- Language change -->
+      <ul class="navbar-nav ">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+          role="button" data-mdb-toggle="dropdown" aria-expanded="false"></i> {{ _('Language') }}
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li>
+            <a class="dropdown-item" href="{{url_for('babel.index', locale='en', next=request.path)}}">English</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="{{url_for('babel.index', locale='el', next=request.path)}}">{{ _('Greek') }}</a>
+          </li>
+        </ul>
+        </li>
+      </ul>
+      <!-- Language change -->
+
+      </div>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->

@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ _('About me') }}
+{% endblock title %}
+
+{% block jumbotron %}
+<div id="intro"
+class="text-center bg-image shadow-3-strong"
+style="background-image: url('/static/images/index_jumbotron.jpg');">
+<div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+  <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+          <h1 class="mb-3">{{ _('Mysiloglou Dimitrios') }}</h1>
+              <h5 class="mb-4">{{ _('Data analyst | Data Scientist') }}</h5>
+          <a class="btn btn-outline-light btn-lg m-2"
+          target="_blank"
+          href="{{ url_for('static', filename='CV_' + session['locale'] + '.pdf') }}"
+          role="button"
+          >{{ _('Download CV') }}</a>
+          <a class="btn btn-outline-light btn-lg m-2"
+          href="/contact"
+          role="button"
+          >{{ _('Contact Me') }}</a>
+      </div>
+  </div>
+</div>
+</div>
+<!-- Background image -->
+{% endblock jumbotron %}
+
+{% block content %}
+<main>
+    <div class="container">
+        <section class="text-center" id="about-sector">
+          <h3 class="mt-5"><strong>{{ _('About me') }}</strong></h3>
+          <div class="row">
+            <div class="col-md-6 mb-4 px-4">
+              <img src="{{ url_for('static', filename='images/photo.jpg') }}"
+              class="rounded-circle shadow-1-strong mb-4" id="my-photo" alt="Avatar">
+              <p>
+                {{ _("Welcome to my site! I made this blog to record my passion for problem solving through data analysis. I hold a Bachelor's degree in Economics and I am experienced in Python, SQL and Tableau. My other interests are web development and creating Linux projects with Raspberry Pi. Thank you for visiting!") }}
+              </p>
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #171515;" href="https://github.com/JimMysiloglou" target="_blank" role="button"><i class="fab fa-github"></i></a>
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #0376a8;" href="https://www.linkedin.com/in/jimmysiloglou/" target="_blank" role="button"><i class="fab fa-linkedin-in"></i></a>
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/jim.misi/" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="https://twitter.com/JimMysiloglou" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row"><i class="far fa-envelope pe-2 text-muted"></i>Email</th>
+                    <td>mysiloglou@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><i class="fas fa-phone pe-2 text-muted"></i> {{ _('Cellphone') }}</th>
+                    <td>6909243815</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><i class="fas fa-map-marker-alt pe-2 text-muted"></i> {{ _('Address') }}</th>
+                    <td>{{ _('Piraues - Greece') }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            
+            </div>
+            <div class="col-md-6 mb-4 align-self-center">
+              <!-- First row -->
+              <p><strong>{{ _('Proficient (4+ years)') }}:</strong></p>
+              <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                  <i class="fab fa-python fa-3x m-2"></i>
+                  <p>Python</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <i class="fa-brands fa-microsoft fa-3x m-2"></i>
+                  <p>MS Office Suite</p>
+                </div>
+              </div>
+              <!-- First row -->
+              <!-- Second row -->
+              <p><strong>{{ _('Advanced (3 years)') }}:</strong></p>
+              <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                  <i class="fa-solid fa-database fa-3x m-2"></i>
+                  <p>SQL</p>
+                </div>
+    
+                <div class="col-md-4 mb-4">
+                  <i class="fa-solid fa-table fa-3x m-2"></i>
+                  <p>Pandas</p>
+                </div>
+    
+                <div class="col-md-4 mb-4">
+                  <i class="fa-solid fa-brain fa-3x m-2"></i>
+                  <p>Scikit-Learn</p>
+                </div>
+              </div>
+              <!-- Second row -->
+              <!-- Third row -->
+              <p><strong>{{ _('Good (2 years)') }}:</strong></p>
+              <div class="row justify-content-center">
+            
+                <div class="col-md-4 mb-4">
+                  <i class="fa-brands fa-html5 fa-3x m-2"></i>
+                  <p>HTML</p>
+                </div>
+    
+                <div class="col-md-4 mb-4">
+                  <i class="fa-brands fa-css3-alt fa-3x m-2"></i>
+                  <p>CSS3</p>
+                </div>
+    
+                <div class="col-md-4 mb-4">
+                  <i class="fa-brands fa-js fa-3x m-2"></i>
+                  <p>Javascript</p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <i class="fa-solid fa-chart-pie fa-3x m-2"></i>
+                    <p>Tableau</p>
+                  </div>
+
+                <div class="col-md-6 mb-4">
+                    <i class="fas fa-terminal fa-3x m-2"></i>
+                    <p>Unix</p>
+                  </div>
+              </div>
+              <!-- Third row -->
+    
+              <!-- Fourth row -->
+              <p><strong>{{ _('Learning (1 year)') }}:</strong></p>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <i class="fa-solid fa-chart-column fa-3x m-2"></i>
+                  <p>Power BI</p>
+                </div>
+    
+                <div class="col-md-6 mb-4">
+                  <i class="fa-solid fa-code fa-3x m-2"></i>
+                  <p>Excel VBA</p>
+                </div>
+
+                
+              </div>
+              <!-- Fourth row -->
+            </div>
+          </div>
+        </section>
+        
+  </div>
+</main>
+{% endblock content %}

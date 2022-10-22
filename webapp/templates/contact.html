@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ _('Contact me') }}
+{% endblock title %}
+
+{% block jumbotron %}
+    <!-- Background image -->
+    <div id="intro-contact" class="bg-image shadow-2-strong">
+        <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.8);">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-6 col-md-8">
+                <form class="row bg-white rounded-5 shadow-5-strong p-3 g-3"
+                 action="https://formsubmit.co/d43d7e1b3c3a0cf2155a6e4806db1471" method="POST">
+                  <!-- Honeypot -->
+                  <input type="text" name="_honey" style="display: none;">
+                  <!-- Disable Captcha --> 
+                  <input type="hidden" name="_captcha" value="false">
+
+                  <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+
+                  <h3 class="text-center"> {{ _('Contact Me!') }} </h3>
+                  <div class="form-outline col-md-5 me-auto">
+                    <input type="text" id="firstName" class="form-control" name="name" required/>
+                    <label class="form-label" for="firstName"> {{ _('First Name*') }} </label>
+                  </div>
+                  <div class="form-outline col-md-5 me-auto">
+                    <input type="text" id="lastName" class="form-control" name="Last Name" required/>
+                    <label class="form-label" for="lastName"> {{ _('Last Name*') }} </label>
+                  </div>
+                  <div class="form-outline col-md-7 me-auto">
+                    <input type="email" id="emailInfo" class="form-control" name="email" required/>
+                    <label class="form-label" for="emailInfo">E-mail*</label>
+                  </div>
+                  <div class="form-outline col-md-4 me-auto">
+                    <input type="tel" id="phoneNumber" class="form-control" name="phone"/>
+                    <label class="form-label" for="phoneNumber"> {{ _('Phone Number') }} </label>
+                  </div>
+                  <div class="form-outline col-md12 me-auto">
+                    <textarea class="form-control" id="comments" rows="4" name="comments" required></textarea>
+                    <label class="form-label" for="comments"> {{ _('Message*') }} </label>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary"> {{ _('Submit') }} </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Background image -->
+{% endblock jumbotron %}
